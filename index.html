@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vincy Lidiya | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f0f4ff;
+      color: #222;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #004aad, #0077ff);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .resume-btn {
+      background: white;
+      color: #004aad;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .resume-btn:hover {
+      background: #e5eeff;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #002d75;
+      text-align: center;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #004aad;
+      margin-bottom: 25px;
+      border-left: 6px solid #004aad;
+      padding-left: 10px;
+      font-size: 1.8rem;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+    }
+
+    /* ABOUT */
+    .about p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    /* SKILLS */
+    .skill-bar {
+      margin-bottom: 15px;
+    }
+
+    .skill-bar span {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .progress {
+      height: 12px;
+      background: #dbe7ff;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .progress div {
+      height: 12px;
+      background: linear-gradient(90deg, #004aad, #0077ff);
+      border-radius: 20px;
+      width: 0;
+      transition: width 2s ease;
+    }
+
+    /* PROJECTS */
+    .project-card {
+      background: #f8faff;
+      border-left: 5px solid #004aad;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      color: #004aad;
+      margin-bottom: 5px;
+    }
+
+    /* CONTACT */
+    .contact p {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .contact a {
+      color: #004aad;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      color: #0077ff;
+    }
+
+    footer {
+      background: #004aad;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/120" alt="Profile Photo">
+    <h1>Vincy Lidiya</h1>
+    <p>BCA Final Year Student |Aspiring Data Engineer | ML Enthusiast</p>
+    <a href="resume.pdf" class="resume-btn" target="_blank">Download Resume</a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about card">
+    <h2>About Me</h2>
+    <p>
+      I’m a BCA final-year student aspiring to become a Data Engineer. I have a strong interest in building data-driven systems and working with tools like Python, SQL, and Power BI. My project on Mental Health Prediction using ML deepened my skills in data processing and analysis, and I’m passionate about turning raw data into meaningful insights.    </p>
+  </section>
+
+  <section id="skills" class="skills card">
+    <h2>Skills & Technologies</h2>
+    <div class="skill-bar">
+      <span>HTML / CSS / JavaScript</span>
+      <div class="progress"><div style="width: 90%;"></div></div>
+    </div>
+    <div class="skill-bar">
+      <span>Python & Machine Learning</span>
+      <div class="progress"><div style="width: 85%;"></div></div>
+    </div>
+    <div class="skill-bar">
+      <span>Django Framework</span>
+      <div class="progress"><div style="width: 75%;"></div></div>
+    </div>
+    <div class="skill-bar">
+      <span>Power BI</span>
+      <div class="progress"><div style="width: 70%;"></div></div>
+    </div>
+    <div class="skill-bar">
+      <span>Graphic Design (Photoshop, Canva)</span>
+      <div class="progress"><div style="width: 80%;"></div></div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects card">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Mental Health Prediction using ML</h3>
+      <p>
+        A web application that predicts users' mental health levels (Low, Moderate, High) using Random Forest Classifier.
+        The model analyzes questionnaire responses to give personalized insights.
+      </p>
+      <p><strong>Tech:</strong> Python, Django, Machine Learning, HTML, CSS</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Graphic Design Internship</h3>
+      <p>
+        Created digital posters, logos, and social media content for Joetech.
+        Learned creative design workflows and visual branding.
+      </p>
+      <p><strong>Tools:</strong> Photoshop, Canva</p>
+    </div>
+  </section>
+
+  <section id="experience" class="experience card">
+    <h2>Experience</h2>
+    <p><strong>Joetech</strong> – 15-Day Internship in Graphic Design</p>
+    <p>Worked on brand graphics and improved creative visualization skills.</p>
+  </section>
+
+  <section id="contact" class="contact card">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:vincy@example.com">vincy@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/vincy" target="_blank">linkedin.com/in/vincy</a></p>
+    <p>GitHub: <a href="https://github.com/vincy" target="_blank">github.com/vincy</a></p>
+  </section>
+
+  <footer>
+    © 2025 Vincy Lidiya | All Rights Reserved
+  </footer>
+
+  <script>
+    // Animate skill bars on scroll
+    window.addEventListener("scroll", () => {
+      document.querySelectorAll(".progress div").forEach(bar => {
+        const rect = bar.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          bar.style.width = bar.getAttribute("style").match(/width:\s?(\d+%)/)[1];
+        }
+      });
+    });
+  </script>
+</body>
+</html>
